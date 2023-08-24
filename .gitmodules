@@ -1,0 +1,60 @@
+[submodule "extensions/auto-save"]
+	path = extensions/auto-save
+	url = https://github.com/manateelazycat/auto-save.git
+[submodule "extensions/ws-butler"]
+	path = extensions/ws-butler
+	url = https://github.com/lewang/ws-butler.git
+[submodule "extensions/lispy"]
+	path = extensions/lispy
+	url = https://github.com/abo-abo/lispy.git
+[submodule "extensions/lpy"]
+	path = extensions/lpy
+	url = https://github.com/abo-abo/lpy.git
+[submodule "extensions/iedit"]
+	path = extensions/iedit
+	url = https://github.com/abo-abo/iedit.git
+[submodule "extensions/avy"]
+	path = extensions/avy
+	url = https://github.com/abo-abo/avy.git
+[submodule "extensions/hydra"]
+	path = extensions/hydra
+	url = https://github.com/abo-abo/hydra.git
+[submodule "extensions/swiper"]
+	path = extensions/swiper
+	url = https://github.com/abo-abo/swiper
+[submodule "extensions/lsp-bridge"]
+	path = extensions/lsp-bridge
+	url = https://github.com/manateelazycat/lsp-bridge
+[submodule "extensions/markdown-mode"]
+	path = extensions/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode
+[submodule "extensions/yasnippet"]
+	path = extensions/yasnippet
+	url = https://github.com/joaotavora/yasnippet
+[submodule "extensions/pyim"]
+	path = extensions/pyim
+	url = https://github.com/tumashu/pyim.git
+[submodule "extensions/pyim-basedict"]
+	path = extensions/pyim-basedict
+	url = https://github.com/tumashu/pyim-basedict.git
+[submodule "extensions/lazy-load"]
+	path = extensions/lazy-load
+	url = https://github.com/manateelazycat/lazy-load.git
+[submodule "extensions/xr"]
+	path = extensions/xr
+	url = https://github.com/mattiase/xr
+[submodule "extensions/async"]
+	path = extensions/async
+	url = https://github.com/jwiegley/emacs-async.git
+[submodule "extensions/eclipse-theme"]
+	path = extensions/eclipse-theme
+	url = https://github.com/abo-abo/eclipse-theme
+[submodule "extensions/emacs-application-framework"]
+	path = extensions/emacs-application-framework
+	url = https://github.com/emacs-eaf/emacs-application-framework.git
+[submodule "extensions/exwm"]
+	path = extensions/exwm
+	url = https://github.com/ch11ng/exwm.git
+[submodule "extensions/xelb"]
+	path = extensions/xelb
+	url = https://github.com/ch11ng/xelb.git

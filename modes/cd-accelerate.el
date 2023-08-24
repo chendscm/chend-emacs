@@ -7,4 +7,4 @@
  package-enable-at-startup nil
  package-init-file-ensured t)
 
-(provide 'init-accelerate)
+(provide 'cd-accelerate)

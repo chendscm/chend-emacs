@@ -1,4 +1,4 @@
-(defun load-font-setup()
+(defun cd-set-font()
   (cond ((eq window-system 'pgtk)
          (set-face-attribute  'default nil :height 140 :family "WenQuanYi Micro Hei Mono"))
         (t
@@ -18,10 +18,10 @@
                (set-fontset-font (frame-parameter nil 'font) charset (font-spec :family (eval chinese-font-name))))
              )))))
 
-(load-font-setup)
+(cd-set-font)
 
 ;; This is hacking to fix Emacs 29 will decrease font after standby.
-(add-function :after after-focus-change-function #'load-font-setup)
+(add-function :after after-focus-change-function #'cd-set-font)
 
 (dolist (hook (list
                'c-mode-common-hook
@@ -36,6 +36,7 @@
                'web-mode-hook
                'markdown-mode-hook
                ))
-  (add-hook hook #'(lambda () (load-font-setup))))
+  (add-hook hook #'(lambda () (cd-set-font))))
 
-(provide 'init-font)
+
+(provide 'cd-fonts)

@@ -39,13 +39,21 @@
   (file-name-directory
    (or load-file-name (buffer-file-name))))
 (add-subdirs-to-load-path emacs-d)
+(add-to-list 'load-path emacs-d)
+
+;;* Bootstrap
+;;** autoloads
+(load (concat emacs-d "loaddefs.el") nil t)
 
 ;;* Init
 ;; 加速配置
-(require 'init-accelerate)
+(require 'cd-accelerate)
 
 ;; 字体设置
-(require 'init-font)
+(require 'cd-fonts)
+
+;; hooks
+(require 'hooks)
 
 (let (
       ;; 加载的时候临时增大 `gc-cons-threshold'以加速启动速度
@@ -62,13 +70,24 @@
             (lambda ()
               (setq-default inhibit-redisplay nil
                             inhibit-message nil)
-              (redisplay)))
-  )
+              (redisplay))))
 
 (with-temp-message ""                   ;抹掉插件启动的输出
   (require 'init-fullscreen)
 
   (require 'init-generic)
+  (require 'eclipse-theme)
+  (load-theme 'eclipse t)
+  ;;(require 'lazy-load)
 
+  (require 'cd-auto-save)
+  (require 'cd-pyim)
+  ;;(require 'init-mode)
+
+  ;; 可以延后加载的
+  (run-with-idle-timer
+   1 nil
+   #'(lambda ()
+       (require 'cd-eaf)))
   )
 
