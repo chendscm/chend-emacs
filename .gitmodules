@@ -46,9 +46,6 @@
 [submodule "extensions/async"]
 	path = extensions/async
 	url = https://github.com/jwiegley/emacs-async.git
-[submodule "extensions/eclipse-theme"]
-	path = extensions/eclipse-theme
-	url = https://github.com/abo-abo/eclipse-theme
 [submodule "extensions/emacs-application-framework"]
 	path = extensions/emacs-application-framework
 	url = https://github.com/emacs-eaf/emacs-application-framework.git
