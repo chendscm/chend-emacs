@@ -9,17 +9,17 @@
   (interactive)
   (let* ((dir (file-name-as-directory search-dir)))
     (dolist (subdir
-              ;; 过滤不必要的目录,提升Emacs启动速度
-              (cl-remove-if
-               #'(lambda (subdir)
-                   (or
-                    ;; 不是目录的文件都移除
-                    (not (file-directory-p (concat dir subdir)))
-                    ;; 父目录,语言相关和版本控制目录都移除
-                    (member subdir '("." ".."
-                                     "dist" "node_modules" "__pycache__"
-                                     "RCS" "CVS" "rcs" ".git" ".github"))))
-               (directory-files dir)))
+             ;; 过滤不必要的目录,提升Emacs启动速度
+             (cl-remove-if
+              #'(lambda (subdir)
+                  (or
+                   ;; 不是目录的文件都移除
+                   (not (file-directory-p (concat dir subdir)))
+                   ;; 父目录,语言相关和版本控制目录都移除
+                   (member subdir '("." ".."
+                                    "dist" "node_modules" "__pycache__"
+                                    "RCS" "CVS" "rcs" ".git" ".github"))))
+              (directory-files dir)))
       (let ((subdir-path (concat dir (file-name-as-directory subdir))))
         ;; 目录下有 .el .so .dll 文件的路径才添加到 `load-path' 中,提升Emacs启动速度
         (when (cl-some #'(lambda (subdir-file)
@@ -52,6 +52,12 @@
 ;; 字体设置
 (require 'cd-fonts)
 
+;; 时间显示
+(setq display-time-default-load-average nil)
+(display-time-mode t)
+
+(server-start nil)
+
 ;; hooks
 (require 'hooks)
 
@@ -73,13 +79,19 @@
               (redisplay))))
 
 (with-temp-message ""                   ;抹掉插件启动的输出
+  ;; (require 'cd-exwm)
   (require 'init-fullscreen)
 
   (require 'init-generic)
-  (require 'eclipse-theme)
-  (load-theme 'eclipse t)
-  ;;(require 'lazy-load)
+  (require 'lazycat-theme)
+  (lazycat-theme-load-dark)
+  ;; (lazycat-theme-load-light)
+  ;; (require 'eclipse-theme)
+  ;; (load-theme 'eclipse t)
+  ;; (require 'lazy-load)
 
+  (require 'cd-awesome-tray)
+  (require 'cd-lsp-bridge)
   (require 'cd-auto-save)
   (require 'cd-pyim)
   ;;(require 'init-mode)

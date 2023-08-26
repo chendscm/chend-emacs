@@ -23,8 +23,8 @@
 
 ;;;***
 
-;;;### (autoloads nil nil ("hooks.el" "modes/cd-auto-save.el" "modes/cd-fonts.el")
-;;;;;;  (0 0 0 0))
+;;;### (autoloads nil nil ("hooks.el" "modes/cd-auto-save.el") (0
+;;;;;;  0 0 0))
 
 ;;;***
 

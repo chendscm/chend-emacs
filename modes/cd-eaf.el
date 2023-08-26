@@ -1,6 +1,7 @@
 (require 'eaf)
 (require 'eaf-browser)
 (require 'eaf-pdf-viewer)
+(require 'eaf-terminal)
 
 ;; Local proxy
 ;; (setq eaf-proxy-type "socks5")
@@ -10,7 +11,7 @@
 ;; Make `eaf-browser-restore-buffers' restore last close browser buffers.
 (setq eaf-browser-continue-where-left-off t)
 
-(setq eaf-webengine-default-zoom 1.5)
+(setq eaf-webengine-default-zoom 1)
 (setq eaf-browser-aria2-proxy-host "127.0.0.1")
 (setq eaf-browser-aria2-proxy-port "9888")
 (setq eaf-browser-enable-adblocker nil)
