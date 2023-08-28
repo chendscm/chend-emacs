@@ -1,3 +1,11 @@
+;;* Navigation
+;;;###autoload
+(defun cd-move-beginning-of-line ()
+  (interactive)
+  (if (bolp)
+      (back-to-indentation)
+    (beginning-of-line)))
+
 ;;* Regex
 ;;;###autoload
 (defun update-all-autoloads ()

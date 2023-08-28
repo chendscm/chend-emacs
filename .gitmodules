@@ -55,9 +55,9 @@
 [submodule "extensions/xelb"]
 	path = extensions/xelb
 	url = https://github.com/ch11ng/xelb.git
-[submodule "extensions/lazycat-theme"]
-	path = extensions/lazycat-theme
-	url = https://github.com/manateelazycat/lazycat-theme.git
 [submodule "extensions/awesome-tray"]
 	path = extensions/awesome-tray
 	url = https://github.com/manateelazycat/awesome-tray.git
+[submodule "extensions/zen-theme"]
+	path = extensions/zen-theme
+	url = https://github.com/chendscm/zen-theme.git

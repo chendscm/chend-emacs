@@ -52,11 +52,7 @@
 ;; 字体设置
 (require 'cd-fonts)
 
-;; 时间显示
-(setq display-time-default-load-average nil)
-(display-time-mode t)
-
-(server-start nil)
+;; (server-start nil)
 
 ;; hooks
 (require 'hooks)
@@ -83,9 +79,8 @@
   (require 'init-fullscreen)
 
   (require 'init-generic)
-  (require 'lazycat-theme)
-  (lazycat-theme-load-dark)
-  ;; (lazycat-theme-load-light)
+  (require 'zen-theme)
+  (load-theme 'zen t)
   ;; (require 'eclipse-theme)
   ;; (load-theme 'eclipse t)
   ;; (require 'lazy-load)
@@ -100,6 +95,4 @@
   (run-with-idle-timer
    1 nil
    #'(lambda ()
-       (require 'cd-eaf)))
-  )
-
+       (require 'cd-eaf))))
