@@ -61,3 +61,9 @@
 [submodule "extensions/zen-theme"]
 	path = extensions/zen-theme
 	url = https://github.com/chendscm/zen-theme.git
+[submodule "extensions/eaf-apps/eaf-browser"]
+	path = extensions/eaf-apps/eaf-browser
+	url = https://github.com/emacs-eaf/eaf-browser.git
+[submodule "extensions/eaf-apps/eaf-pdf-viewer"]
+	path = extensions/eaf-apps/eaf-pdf-viewer
+	url = https://github.com/emacs-eaf/eaf-pdf-viewer.git

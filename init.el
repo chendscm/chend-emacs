@@ -50,7 +50,7 @@
 (require 'cd-accelerate)
 
 ;; 字体设置
-(require 'cd-fonts)
+;(require 'cd-fonts)
 
 ;; (server-start nil)
 
