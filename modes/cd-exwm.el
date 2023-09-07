@@ -59,10 +59,11 @@
 	(setq exwm-randr-workspace-output-plist (list 0 (match-string 1)))))))
 
 ;;** Enable external screen
-;; (setq exwm-randr-worksapce-output-plist '(2 "eDP"))
+;; (setq exwm-randr-worksapce-output-plist '(0 "eDP"))
+
 ;; (defun exwm-change-screen-hook ()
 ;;   (start-process-shell-command
-;;    "xrandr" nil "xrandr --output HDMI-A-0 --left-of eDP --auto"))
+;;    "xrandr" nil "xrandr --output eDP --left-of HDMI-A-0 --auto"))
 
 ;;**
 (add-hook 'exwm-randr-screen-change-hook 'exwm-change-screen-hook)

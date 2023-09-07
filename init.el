@@ -75,7 +75,7 @@
               (redisplay))))
 
 (with-temp-message ""                   ;抹掉插件启动的输出
-  ;; (require 'cd-exwm)
+  (require 'cd-exwm)
   (require 'init-fullscreen)
 
   (require 'init-generic)
@@ -91,8 +91,13 @@
   (require 'cd-pyim)
   ;;(require 'init-mode)
 
+  ;; tmp
+  (require 'cd-org-babel)
+
   ;; 可以延后加载的
   (run-with-idle-timer
    1 nil
    #'(lambda ()
-       (require 'cd-eaf))))
+       (require 'cd-eaf)
+       ;; (require 'cd-vterm)
+       )))

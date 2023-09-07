@@ -67,3 +67,6 @@
 [submodule "extensions/eaf-apps/eaf-pdf-viewer"]
 	path = extensions/eaf-apps/eaf-pdf-viewer
 	url = https://github.com/emacs-eaf/eaf-pdf-viewer.git
+[submodule "extensions/libvterm"]
+	path = extensions/libvterm
+	url = https://github.com/akermu/emacs-libvterm.git
