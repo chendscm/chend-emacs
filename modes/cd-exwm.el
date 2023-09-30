@@ -71,10 +71,10 @@
 (exwm-randr-enable)
 
 ;;* Using xim input
-(setenv "GTK_IM_MODULE" "xim")
-(setenv "QT_IM_MODULE" "xim")
-(setenv "XMODIFIERS" "@im=exwm-xim")
-(setenv "CLUTTER_IM_MODULE" "xim")
+;; (setenv "GTK_IM_MODULE" "xim")
+;; (setenv "QT_IM_MODULE" "xim")
+;; (setenv "XMODIFIERS" "@im=exwm-xim")
+;; (setenv "CLUTTER_IM_MODULE" "xim")
 (require 'exwm-xim)
 (exwm-xim-enable)
 (push ?\C-\\ exwm-input-prefix-keys)

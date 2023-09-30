@@ -75,7 +75,7 @@
               (redisplay))))
 
 (with-temp-message ""                   ;抹掉插件启动的输出
-  ;; (require 'cd-exwm)
+  (require 'cd-exwm)
   (require 'init-fullscreen)
 
   (require 'init-generic)
@@ -85,7 +85,7 @@
   ;; (load-theme 'eclipse t)
   ;; (require 'lazy-load)
 
-  (require 'cd-awesome-tray)
+  ;; (require 'cd-awesome-tray)
   (require 'cd-lsp-bridge)
   (require 'cd-auto-save)
   (require 'cd-pyim)
@@ -99,5 +99,6 @@
    1 nil
    #'(lambda ()
        (require 'cd-eaf)
+       (require 'lispy)
        ;; (require 'cd-vterm)
        )))

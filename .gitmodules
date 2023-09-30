@@ -73,3 +73,6 @@
 [submodule "extensions/eaf-apps/eaf-terminal"]
 	path = extensions/eaf-apps/eaf-terminal
 	url = https://github.com/emacs-eaf/eaf-terminal.git
+[submodule "extensions/posframe"]
+	path = extensions/posframe
+	url = https://github.com/tumashu/posframe.git
