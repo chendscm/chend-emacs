@@ -50,7 +50,7 @@
 (require 'cd-accelerate)
 
 ;; 字体设置
-;(require 'cd-fonts)
+(require 'cd-fonts)
 
 ;; (server-start nil)
 
@@ -75,14 +75,12 @@
               (redisplay))))
 
 (with-temp-message ""                   ;抹掉插件启动的输出
-  (require 'cd-exwm)
+  ;; (require 'cd-exwm)
   (require 'init-fullscreen)
 
   (require 'init-generic)
   (require 'zen-theme)
   (load-theme 'zen t)
-  ;; (require 'eclipse-theme)
-  ;; (load-theme 'eclipse t)
   ;; (require 'lazy-load)
 
   ;; (require 'cd-awesome-tray)

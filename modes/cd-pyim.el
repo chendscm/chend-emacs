@@ -11,7 +11,7 @@
 
 (setq pyim-page-tooltip 'posframe)
 (pyim-default-scheme 'quanpin)
-法大萨
+
 (global-set-key (kbd "C-\\") 'toggle-input-method)
 
 (provide 'cd-pyim)
