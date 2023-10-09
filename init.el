@@ -98,5 +98,6 @@
    #'(lambda ()
        (require 'cd-eaf)
        (require 'lispy)
+       (require 'cd-python)
        ;; (require 'cd-vterm)
        )))
