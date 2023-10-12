@@ -52,6 +52,10 @@
 ;; 字体设置
 (require 'cd-fonts)
 
+;;
+(defmacro csetq (variable value)
+  `(funcall (or (get ',variable 'custom-set) 'set-default) ',variable ,value))
+
 ;; (server-start nil)
 
 ;; hooks
@@ -99,5 +103,6 @@
        (require 'cd-eaf)
        (require 'lispy)
        (require 'cd-python)
+       (require 'cd-avy)
        ;; (require 'cd-vterm)
        )))

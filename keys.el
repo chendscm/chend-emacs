@@ -1,4 +1,7 @@
 ;;*
+(global-set-key (kbd "C-x o") 'ace-window)
+
+;;*
 (defhydra hydra-one (:color pink
 			    :hint nil
 			    :foreign-keys run)
