@@ -8,6 +8,7 @@
 (setq default-input-method "pyim")
 ;; 设置侯选词数
 (setq pyim-page-length 8)
+(setq-default pyim-punctuation-translate-p '(no)) ; 半角标点
 
 (setq pyim-page-tooltip 'posframe)
 (pyim-default-scheme 'quanpin)

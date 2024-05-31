@@ -79,3 +79,6 @@
 [submodule "extensions/ace-window"]
 	path = extensions/ace-window
 	url = https://github.com/abo-abo/ace-window.git
+[submodule "extensions/valign"]
+	path = extensions/valign
+	url = https://github.com/casouri/valign.git

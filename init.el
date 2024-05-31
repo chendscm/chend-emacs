@@ -94,6 +94,7 @@
   ;;(require 'init-mode)
 
   ;; tmp
+  (require 'cd-org)
   (require 'cd-org-babel)
 
   ;; 可以延后加载的
