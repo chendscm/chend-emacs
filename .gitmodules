@@ -49,12 +49,6 @@
 [submodule "extensions/emacs-application-framework"]
 	path = extensions/emacs-application-framework
 	url = https://github.com/emacs-eaf/emacs-application-framework.git
-[submodule "extensions/exwm"]
-	path = extensions/exwm
-	url = https://github.com/ch11ng/exwm.git
-[submodule "extensions/xelb"]
-	path = extensions/xelb
-	url = https://github.com/ch11ng/xelb.git
 [submodule "extensions/awesome-tray"]
 	path = extensions/awesome-tray
 	url = https://github.com/manateelazycat/awesome-tray.git
