@@ -38,43 +38,40 @@
 		    (start-process "" nil "/usr/bin/slock")))))
 
 ;;* Multi screen
-;; (require 'exwm-randr)
+(require 'exwm-randr)
+
+;; (setq exwm-randr-worksapce-output-plist '(0 "HDMI-A-0"))
+;; (add-hook 'exwm-randr-screen-change-hook
+;; 	  (lambda ()
+;; 	    (start-process-shell-command
+;; 	     "xrandr" nil "xrandr --output eDP --left-of HDMI-A-0 --auto")))
 
 ;;** Auto only enable the connected external screen
-;; (defun exwm-change-screen-hook ()
-;;   (let ((xrandr-output-regexp "\n\\([^ ]+\\) connected ")
-;; 	default-output)
-;;     (with-temp-buffer
-;;       (call-process "xrandr" nil t nil)
-;;       (goto-char (point-min))
-;;       (re-search-forward xrandr-output-regexp nil 'noerror)
-;;       (setq default-output (match-string 1))
-;;       (forward-line)
-;;       (if (not (re-search-forward xrandr-output-regexp nil 'noerror))
-;; 	  (call-process "xrandr" nil nil nil "--output" default-output "--auto")
-;; 	(call-process
-;; 	 "xrandr" nil nil nil
-;; 	 "--output" (match-string 1) "--primary" "--auto"
-;; 	 "--output" default-output "--off")
-;; 	(setq exwm-randr-workspace-output-plist (list 0 (match-string 1)))))))
+(defun exwm-change-screen-hook ()
+  (let ((xrandr-output-regexp "\n\\([^ ]+\\) connected ")
+	default-output)
+    (with-temp-buffer
+      (call-process "xrandr" nil t nil)
+      (goto-char (point-min))
+      (re-search-forward xrandr-output-regexp nil 'noerror)
+      (setq default-output (match-string 1))
+      (forward-line)
+      (if (not (re-search-forward xrandr-output-regexp nil 'noerror))
+	  (call-process "xrandr" nil nil nil "--output" default-output "--auto")
+	(call-process
+	 "xrandr" nil nil nil
+	 "--output" (match-string 1) "--primary" "--auto"
+	 "--output" default-output "--off")
+	(setq exwm-randr-workspace-output-plist (list 0 (match-string 1)))))))
 
-;;** Enable external screen
-(setq exwm-randr-worksapce-output-plist '(0 "VGA1"))
-(add-hook 'exwm-randr-screen-change-hook
-	  (lambda ()
-	    (start-process-shell-command
-	     "xrandr" nil "xrandr --output VGA1 --left-of LVDS1 --auto")))
-(exwm-randr-mode 1)
 ;;**
-;; (add-hook 'exwm-randr-screen-change-hook 'exwm-change-screen-hook)
-;;**
-;; (exwm-randr-enable)
+(exwm-randr-enable)
 
 ;;* Using xim input
-;; (setenv "GTK_IM_MODULE" "xim")
-;; (setenv "QT_IM_MODULE" "xim")
-;; (setenv "XMODIFIERS" "@im=exwm-xim")
-;; (setenv "CLUTTER_IM_MODULE" "xim")
+(setenv "GTK_IM_MODULE" "xim")
+(setenv "QT_IM_MODULE" "xim")
+(setenv "XMODIFIERS" "@im=exwm-xim")
+(setenv "CLUTTER_IM_MODULE" "xim")
 (require 'exwm-xim)
 (exwm-xim-enable)
 (push ?\C-\\ exwm-input-prefix-keys)

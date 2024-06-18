@@ -76,3 +76,9 @@
 [submodule "extensions/valign"]
 	path = extensions/valign
 	url = https://github.com/casouri/valign.git
+[submodule "extensions/exwm"]
+	path = extensions/exwm
+	url = https://github.com/emacs-exwm/exwm.git
+[submodule "extensions/xelb"]
+	path = extensions/xelb
+	url = https://github.com/emacs-exwm/xelb.git
