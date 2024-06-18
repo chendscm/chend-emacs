@@ -79,7 +79,7 @@
               (redisplay))))
 
 (with-temp-message ""                   ;抹掉插件启动的输出
-  ;; (require 'cd-exwm)
+  (require 'cd-exwm)
   (require 'init-fullscreen)
 
   (require 'init-generic)
