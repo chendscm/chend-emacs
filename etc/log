@@ -1,0 +1,9 @@
+-*- mode: compilation -*-
+Already up to date.
+Submodule path 'extensions/async': checked out 'bb0509060ddc9c94bc7db7bddb12995acb3b53e4'
+Submodule path 'extensions/auto-save': checked out 'e0a6f2e85e2aae115321e2cdfee892d48f0d9597'
+Submodule path 'extensions/awesome-tray': checked out 'edd1503477c4de6dc86ade9161e3b7c11e34569c'
+Submodule path 'extensions/eaf-apps/eaf-browser': checked out '8bc96cfd0f7aee3c732a9d2f5514eb619f437e81'
+Submodule path 'extensions/eaf-apps/eaf-pdf-viewer': checked out '9d783922826db7d8d6f5aaae19777bd55ea41548'
+Submodule path 'extensions/emacs-application-framework': checked out '1a1e3cdd0e0102bce08c10d1eeb1a89ce7c8b8b6'
+Submodule path 'extensions/exwm': checked out 'a417f0d45e73f75028ba17ae49c664e3548deeba'
