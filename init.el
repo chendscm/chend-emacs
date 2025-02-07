@@ -80,7 +80,7 @@
 
 (with-temp-message ""                   ;抹掉插件启动的输出
   ;; (require 'cd-exwm)
-  (require 'init-fullscreen)
+  ;; (require 'init-fullscreen)
 
   (require 'init-generic)
   (require 'zen-theme)
@@ -101,7 +101,7 @@
   (run-with-idle-timer
    1 nil
    #'(lambda ()
-       (require 'cd-eaf)
+       ;; (require 'cd-eaf)
        (require 'lispy)
        (require 'cd-python)
        (require 'cd-avy)
